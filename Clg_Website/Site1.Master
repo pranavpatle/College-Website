@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Clg_Website.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!--Counter script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--____________________For Text Font____________________-->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+
+    <!--____________________For Icon ____________________-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:#DEF2FA;">
+
+
+    
+    <form id="form1" runat="server">
+        <!--- HEADER --->
+        <section class="header">
+        <nav>
+            <a href="#"><img src="images/logo.png" alt=""></a>
+
+            <!-- <div class="nav-links" id="">
+                <i class="fa fa-times" aria-hidden="true" onclick="hide()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">PLACEMENT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" aria-hidden="true" onclick="show()"></i>-->
+        </nav>
+        </section>
+        <div>
+            <!--- NavBar --->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2B7178">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">About Us</a>
+      </li>
+
+        <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">Academics</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">Placement</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">MIS</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">Gallery</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">Hostel</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 18px;">Contact Us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+
+
+        <!--- FOOTER --->
+
+    <section>
+        <footer>
+            <div class="container">
+                <div class="rows">
+                    <div class="footer-col">
+                        <h4>Quick Contact</h4>
+                        <ul>
+                            <li><a href="#">info@stvincentngp.edu.in</a></li>
+                            <li><a href="#">+91 - 9423683433</a></li>
+                            <li><a href="#">Engineering: +91 7743979315</a></li>
+                            <li><a href="#">B.VOC.: +91 9699833757</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Chairman Desk</a></li>
+                            <li><a href="#">Principal Desk</a></li>
+                            <li><a href="#">Our Institute</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>IMP Links</h4>
+                        <ul>
+                            <li><a href="#">MIS Portal</a></li>
+                            <li><a href="#">MIS Login</a></li>
+                            <li><a href="#">Hostels</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Libraries</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Others</h4>
+                        <ul>
+                            <li><a href="#">Course Fee Details</a></li>
+                            <li><a href="#">Scholarship Portal</a></li>
+                        </ul>
+                        <br><br>
+                        <h4>Follow Us</h4>
+
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </form>
+</body>
+</html>
